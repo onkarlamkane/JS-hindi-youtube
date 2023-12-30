@@ -18,6 +18,13 @@
   console.log(typeof bigNumber);
 
 
+  //************************************************************ */
+                  //Memory
+
+      // Two types of memory  Stack memory (used in primitive type datatype return a copy) 
+      // Heap Memory (Non primitive type memory return a reference) 
+
+
 
 // Reference type( Non primitive (call by refernce))
 // Array , Objects , functions
