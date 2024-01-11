@@ -23,7 +23,22 @@ const obj2 = {3:"c",4:"d"}
 const obj3 ={...obj1,...obj2} //most use type merge the object
 //console.log(obj3);
 
- console.log(Object.keys(tinderUser))
- console.log(Object.values(tinderUser));
- console.log(Object.entries(tinderUser));// every one key value convert into array
- console.log(tinderUser.hasOwnProperty('name'));//check the property in the object
+//  console.log(Object.keys(tinderUser))
+//  console.log(Object.values(tinderUser));
+//  console.log(Object.entries(tinderUser));// every one key value convert into array
+//  console.log(tinderUser.hasOwnProperty('name'));//check the property in the object
+
+ const course ={
+    coursename:"Js in hindi",
+    courseprice:"999",
+    courseInstructor:"Hitesh"
+ }
+ const {courseInstructor:instuctor} = course //destrucring value
+ console.log(instuctor);
+
+ //example of json
+//  {
+//     "name": "js in hindi",  // in json key and value write in double quote
+//     "courseprice":"free",
+//     "time":"1month"
+//  }
