@@ -32,18 +32,25 @@ const mn4 = [...mn3,...mn2,...mn1]
 
 const another_array = [1,2,3,[5,6,7],8,9,[10,11,[12,13,14]],15,16]
 const real_array = another_array.flat(Infinity)
-//console.log(real_array);
+console.log(real_array);
+//  O/P[
+//     1,  2,  3,  5,  6,  7,
+//     8,  9, 10, 11, 12, 13,
+//    14, 15, 16
+//  ]
+//using .flat() method all array are include in one array
 
 
-console.log(Array.isArray("onkar"));
-console.log(Array.from("onkar"));
+console.log(Array.isArray("onkar"));// use .isArray method not converted into array
+console.log(Array.from("onkar")); // use .from converted into array
 console.log(Array.from({name:"onkar"}));// interesting not converting  form array , 
-//interview op is empty array, before run method define keys and values
-
+// use .from method and give key and value then not converted in array output is empty array.
 let s1= 100
 let s2= 200
 let s3= 300
+//multiple variables is converted into array use Array.of method 
 console.log(Array.of(s1,s2,s3,));
+// output is [ 100, 200, 300 ]
 
 
 
